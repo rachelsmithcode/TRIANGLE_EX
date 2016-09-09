@@ -12,4 +12,12 @@ public class TriangleTests {
     public void printsOnlyOneStar() throws Exception {
         assertEquals("*", new Triangle().justOneStar());
     }
+
+
+    @Test
+    public void printsLineOfStars() throws Exception {
+        assertEquals("******", new Triangle().lineOfStars());
+    }
+
+
 }

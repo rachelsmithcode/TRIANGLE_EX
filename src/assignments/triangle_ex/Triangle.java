@@ -9,4 +9,7 @@ public class Triangle {
         return "*";
     }
 
+    public String lineOfStars() {
+        return "******";
+    }
 }
