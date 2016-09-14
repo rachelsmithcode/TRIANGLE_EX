@@ -5,13 +5,23 @@ package assignments.triangle_ex;
  */
 public class Triangle {
 
-    public String justOneStar() {
-        return "*";
+    public void justOneStar() {
+        System.out.println("*");
     }
 
-    public String lineOfStars(int n) {
+    public void lineOfStars(int n) {
 
-        return new String(new char[n]).replace("\0", "*");
+        String line = new String(new char[n]).replace("\0", "*");
 
+        System.out.println(line);
     }
+
+    public void multipleLinesOfAStar(int n) {
+
+        while (n > 0) {
+            System.out.println("*");
+            n -= 1;
+        }
+    }
+
 }
