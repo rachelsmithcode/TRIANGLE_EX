@@ -28,25 +28,25 @@ public class TriangleTests {
     }
 
     @Test
-    public void printsOnlyOneStar() throws Exception {
-        new Triangle().justOneStar();
+    public void printsAStar() throws Exception {
+        new Triangle().horizontalLine(1);
         assertEquals("*\n", outContent.toString());
     }
 
 
     @Test
     public void printsLineOfStarsOfAGivenNumber() throws Exception {
-        new Triangle().lineOfStars(6);
+        new Triangle().horizontalLine(6);
         assertEquals("******\n", outContent.toString());
     }
 
 
     @Test
-    public void printsMultipleLinesOfOneStarOfAGivenNumber() throws Exception {
+    public void printsAStarOnAGivenNumberOfLines() throws Exception {
         String testAnswer = "*\n"
                             + "*\n"
                             + "*\n";
-        new Triangle().multipleLinesOfAStar(3);
+        new Triangle().verticalLine(3);
         assertEquals(testAnswer, outContent.toString());
     }
 
@@ -55,7 +55,7 @@ public class TriangleTests {
         String testAnswer = "*\n"
                 + "**\n"
                 + "***\n";
-        new Triangle().rightTriangleOfHeight(3);
+        new Triangle().rightTriangle(3);
         assertEquals(testAnswer, outContent.toString());
     }
 

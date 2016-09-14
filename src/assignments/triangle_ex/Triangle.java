@@ -5,18 +5,14 @@ package assignments.triangle_ex;
  */
 public class Triangle {
 
-    public void justOneStar() {
 
-        System.out.println("*");
-    }
-
-    public void lineOfStars(int n) {
+    public void horizontalLine(int n) {
 
         String line = new String(new char[n]).replace("\0", "*");
         System.out.println(line);
     }
 
-    public void multipleLinesOfAStar(int n) {
+    public void verticalLine(int n) {
 
         while (n > 0) {
             System.out.println("*");
@@ -24,11 +20,11 @@ public class Triangle {
         }
     }
 
-    public void rightTriangleOfHeight(int n) {
+    public void rightTriangle(int n) {
 
         int i = 1;
         while (n >= i) {
-          lineOfStars(i);
+            horizontalLine(i);
             i += 1;
         }
     }
