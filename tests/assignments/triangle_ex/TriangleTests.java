@@ -15,8 +15,8 @@ public class TriangleTests {
 
 
     @Test
-    public void printsLineOfStars() throws Exception {
-        assertEquals("******", new Triangle().lineOfStars());
+    public void printsLineOfStarsOfAGivenNumber() throws Exception {
+        assertEquals("******", new Triangle().lineOfStars(6));
     }
 
 

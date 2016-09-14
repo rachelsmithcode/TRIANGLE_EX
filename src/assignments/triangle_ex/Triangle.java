@@ -9,7 +9,9 @@ public class Triangle {
         return "*";
     }
 
-    public String lineOfStars() {
-        return "******";
+    public String lineOfStars(int n) {
+
+        return new String(new char[n]).replace("\0", "*");
+
     }
 }
