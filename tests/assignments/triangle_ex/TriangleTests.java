@@ -49,4 +49,15 @@ public class TriangleTests {
         new Triangle().multipleLinesOfAStar(3);
         assertEquals(testAnswer, outContent.toString());
     }
+
+    @Test
+    public void printRightTriangleOfGivenHeight() throws Exception {
+        String testAnswer = "*\n"
+                + "**\n"
+                + "***\n";
+        new Triangle().rightTriangleOfHeight(3);
+        assertEquals(testAnswer, outContent.toString());
+    }
+
+
 }

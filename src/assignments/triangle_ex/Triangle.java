@@ -6,13 +6,13 @@ package assignments.triangle_ex;
 public class Triangle {
 
     public void justOneStar() {
+
         System.out.println("*");
     }
 
     public void lineOfStars(int n) {
 
         String line = new String(new char[n]).replace("\0", "*");
-
         System.out.println(line);
     }
 
@@ -24,4 +24,12 @@ public class Triangle {
         }
     }
 
+    public void rightTriangleOfHeight(int n) {
+
+        int i = 1;
+        while (n >= i) {
+          lineOfStars(i);
+            i += 1;
+        }
+    }
 }
