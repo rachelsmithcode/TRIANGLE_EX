@@ -30,22 +30,22 @@ public class TriangleTests {
     @Test
     public void printsOnlyOneStar() throws Exception {
         new Triangle().justOneStar();
-        assertEquals("*", outContent.toString());
+        assertEquals("*\n", outContent.toString());
     }
 
 
     @Test
     public void printsLineOfStarsOfAGivenNumber() throws Exception {
         new Triangle().lineOfStars(6);
-        assertEquals("******", outContent.toString());
+        assertEquals("******\n", outContent.toString());
     }
 
 
     @Test
     public void printsMultipleLinesOfOneStarOfAGivenNumber() throws Exception {
-        String testAnswer = "* \n"
-                            + "* \n"
-                            + "* \n";
+        String testAnswer = "*\n"
+                            + "*\n"
+                            + "*\n";
         new Triangle().multipleLinesOfAStar(3);
         assertEquals(testAnswer, outContent.toString());
     }
