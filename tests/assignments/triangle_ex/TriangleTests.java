@@ -10,9 +10,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 
-/**
- * Created by RachelSmith on 09/09/2016.
- */
 public class TriangleTests {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -58,6 +55,5 @@ public class TriangleTests {
         new Triangle().rightTriangle(3);
         assertEquals(testAnswer, outContent.toString());
     }
-
 
 }
